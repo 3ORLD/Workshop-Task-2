@@ -63,13 +63,6 @@ int main() {
     cout << "Total Words: " << wordCount << endl;
     cout << "Total Sentences: " << sentenceCount << endl;
 
-    // Output each word from the vector after removing punctuation
-    cout << "Words in the file:" << endl;
-    for (const string& word : words) {
-        string wordWithoutPunctuation = removePunctuation(word);
-        cout << wordWithoutPunctuation << endl;
-    }
-
     // Output word frequencies
     cout << "Word Frequencies:" << endl;
     for (const auto& pair : wordFrequency) {
